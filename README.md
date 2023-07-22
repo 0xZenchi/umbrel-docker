@@ -14,8 +14,7 @@ Run `docker compose up -d` to launch Umbrel. Following environment variables can
 - Set `INSTALL_PATH` to the location of the Umbrel code (Default: `$PWD/data`).
 - Set `NGINX_PORT` to change the port where you can access the dashboard
   (Default: 8090)
-- Set `DOCKER_BINARY` to change the docker executable location (Default:
-  `$(which docker)`).
+- Set `DOCKER_BINARY` to change the docker executable location (Default: `/usr/bin/docker`).
 
 All `docker run` arguments are supported, but arguments with values have to use
 the equal sign notation (e.g. `--name=Umbrel`).
