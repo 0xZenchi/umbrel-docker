@@ -1,0 +1,12 @@
+version: '3'
+services:
+  umbrel:
+    build: 
+        context: build
+    environment:
+      - NGINX_PORT=8090
+      - INSTALL_PATH=$PWD/data
+      - DOCKER_BINARY=/usr/bin/docker
+    volumes:
+      - ./data:$PWD/data
+      - /var/run/docker.sock:/var/run/docker.sock
