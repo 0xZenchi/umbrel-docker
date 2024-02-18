@@ -9,7 +9,8 @@ RUN curl -L https://umbrel.sh | bash -s -- \
     --bootstrapped \
     --no-install-umbrel \
 	--no-install-docker \
-	--no-install-compose
+	--no-install-compose \
+    --install-path $INSTALL_PATH
 
 COPY ./entrypoint.sh entrypoint.sh
 
