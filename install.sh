@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-INSTALL_PATH=${INSTALL_PATH:-/root/umbrel/data}
+INSTALL_PATH="/root/umbrel/data"
 
 curl -L https://umbrel.sh \
     | sed "s|    sudo \${UMBREL_INSTALL_PATH}/scripts/start||" \
