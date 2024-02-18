@@ -7,10 +7,9 @@ RUN apt-get -y install docker docker-compose
 
 RUN curl -L https://umbrel.sh | bash -s -- \
     --bootstrapped \
-    --no-install-umbrel \
 	--no-install-docker \
 	--no-install-compose \
-    --install-path $INSTALL_PATH
+    --install-path /umbrel
 
 COPY ./entrypoint.sh entrypoint.sh
 
