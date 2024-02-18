@@ -10,3 +10,4 @@ services:
     volumes:
       - /var/lib/docker/volumes/umbrel/_data:/umbrel
       - /var/run/docker.sock:/var/run/docker.sock
+    pull_policy: build
