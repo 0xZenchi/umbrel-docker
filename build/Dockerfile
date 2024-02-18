@@ -2,8 +2,8 @@ FROM debian:stable-slim
 
 ENV INSTALL_PATH=/umbrel
 
-RUN apt-get -y update && apt-get -y install sudo curl iproute2
-RUN apt-get -y install docker docker-compose
+# RUN apt-get -y update && apt-get -y install sudo curl iproute2
+# RUN apt-get -y install docker docker-compose
 
 RUN curl -L https://umbrel.sh | bash -s -- \
     --bootstrapped \
