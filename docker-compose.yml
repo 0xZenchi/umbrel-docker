@@ -8,5 +8,5 @@ services:
       - INSTALL_PATH=/root/umbrel/data
       - DOCKER_BINARY=/usr/bin/docker
     volumes:
-      - ./var/lib/docker/volumes/umbrel/_data:./root/umbrel/data
+      - /var/lib/docker/volumes/umbrel/_data:/root/umbrel/data
       - /var/run/docker.sock:/var/run/docker.sock
